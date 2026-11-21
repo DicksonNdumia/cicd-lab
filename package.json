@@ -10,6 +10,7 @@
     "dev": "tsx watch src/server.ts",
     "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test test/app.test.ts",
+    "verify": "npm run typecheck && npm test && npm run build",
     "build": "tsc",
     "start": "node dist/server.js"
   },
